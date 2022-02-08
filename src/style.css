@@ -1,3 +1,36 @@
-.hello {
-  color: blue;
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main: chocolate;
+  --white: #fff;
+  --black: #000;
+  --black2: rgb(41, 23, 0);
+}
+
+body {
+  background-color: var(--black2);
+  color: var(--white);
+  font-family: 'Quintessential', cursive;
+  font-size: 10px;
+}
+
+nav {
+  padding-top: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  color: var(--main);
+}
+
+nav ul li {
+  font-weight: bold;
+  font-size: 1.2rem;
 }
