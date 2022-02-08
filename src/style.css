@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+.noScroll {
+  overflow: hidden;
+}
+
 :root {
   --main: chocolate;
   --white: #fff;
@@ -69,6 +73,13 @@ footer {
   margin-top: 15px;
 }
 
+.works-img {
+  width: 100%;
+  filter: grayscale(100%);
+  opacity: 1;
+  transition: filter 500ms, opacity 1s;
+}
+
 .works-img:hover {
   transform: scale(0.93);
   filter: grayscale(0%);
@@ -97,8 +108,90 @@ button:disabled {
   border-color: #c1c7d0;
 }
 
+.modal {
+  font-size: 12px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 10px;
+  z-index: 10;
+  background-color: var(--black2);
+  width: 800px;
+  max-width: 80%;
+  overflow-y: scroll;
+  max-height: 95vh;
+  color: var(--white);
+  padding: 5% 0;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 30px;
+  color: gray;
+  position: absolute;
+  top: -20px;
+  right: 5px;
+}
+
+.modal-body {
+  padding: 20px 40px;
+}
+
+.modal-list {
+  padding-left: 20px;
+  margin-top: -20px;
+}
+
+.blur {
+  filter: blur(10px);
+}
+
+.btn-img {
+  margin-left: 8px;
+  margin-bottom: -3px;
+}
+
+.modal-img {
+  width: 80%;
+  padding-left: 10%;
+}
+
 @media screen and (min-width: 900px) {
   .works-title {
     font-size: 40px;
+  }
+
+  .modal {
+    font-size: 15px;
+    overflow-y: scroll;
+  }
+
+  .modal-img {
+    width: 40%;
+    padding-left: 2.5%;
+  }
+
+  .modal-content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .works-project {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
   }
 }

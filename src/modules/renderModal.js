@@ -1,5 +1,4 @@
-
-const modalRender = (item) => {
+const renderModal = (item) => {
   // creat modal
   const modalContainer = document.createElement('div');
   modalContainer.id = `modal${item.idCategory}`;
@@ -17,20 +16,7 @@ const modalRender = (item) => {
           </div>
         </div>
     </div>
-    <div class="form-comments" >
-      <form id=form${item.idCategory}>
-        <h3>Add Comment</h3>
-        <input name="name" type="text" placeholder="Name" required/>
-        <textarea name="comment" type="message" rows="5" cols="25" placeholder="Your delicious Comment" required></textarea>
-        <button name='button' type="submit" id=${item.idCategory} class="comment-btn">Comment</button>
-      </form>
-      <div class="modal-comment-container">
-        <h3 class=counter-${item.idCategory}>Comments</h3>
-        <ul class="comments" id=comments-${item.idCategory}>
-        
-        </ul>
-      </div>
-    </div>
+   
     `;
   modalContainer.innerHTML = modalContent;
   document.body.appendChild(modalContainer);
@@ -51,4 +37,4 @@ const modalRender = (item) => {
   });
 };
 
-export default modalRender;
+export default renderModal;

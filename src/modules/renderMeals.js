@@ -1,3 +1,5 @@
+import renderModal from './renderModal';
+
 const renderMeals = (list) => {
   const worksContainer = document.querySelector('#portfolio');
   list.forEach((work) => {
@@ -12,6 +14,15 @@ const renderMeals = (list) => {
         </div>`;
     workProject.innerHTML = workContent;
     worksContainer.appendChild(workProject);
+
+    const modalOpenButton = document.getElementById(work.idCategory);
+    modalOpenButton.addEventListener('click', () => {
+      renderModal(work);
+      const modalChoose = document.querySelector(`#modal${work.idCategory}`);
+      modalChoose.classList.add('active');
+      worksContainer.classList.add('blur');
+      document.body.classList.toggle('noScroll');
+    });
   });
 };
 
