@@ -16,9 +16,7 @@ const AddComment = async (id, name, comment) => {
 };
 
 const commentsRender = (data, id) => {
-  console.log({ data });
   const list = document.getElementById(`comments-${id}`);
-  console.log('output list', list);
   list.innerHTML = '';
   if (data.length) {
     data.forEach((comment) => {
@@ -29,13 +27,21 @@ const commentsRender = (data, id) => {
   }
 };
 
+const counterComments = (id, length) => {
+  if (!length) {
+    length = 0;
+  }
+  document.querySelector(`.counter-${id}`).innerHTML = `Comments ( ${length} )`;
+};
+
 export const getComments = async (id) => {
   const response = await fetch(
     `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${InvolveApiId}/comments?item_id=${id}`,
   );
   const data = await response.json();
-  // todo:  const length = data.length;
+  const { length } = data;
   commentsRender(data, id);
+  counterComments(id, length);
   return data;
 };
 
