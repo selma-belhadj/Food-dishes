@@ -22,12 +22,12 @@ const renderModal = (item) => {
     <div class="form-comments" >
       <form id=form${item.idCategory}>
         <h3>Add Comment</h3>
-        <input name="name" type="text" placeholder="Name" required/>
-        <textarea name="comment" type="message" rows="5" cols="25" placeholder="Your delicious Comment" required></textarea>
+        <input name="name" type="text" placeholder="Name" />
+        <textarea name="comment" type="message" rows="5" cols="25" placeholder="Your delicious Comment" ></textarea>
         <button name='button' type="submit" id=${item.idCategory} class="comment-btn">Comment</button>
       </form>
       <div class="modal-comment-container">
-        <h3 class=counter-${item.idCategory}>Comments</h3>
+        <h3 class="counter-${item.idCategory}">Comments</h3>
         <ul class="comments" id=comments-${item.idCategory}>
         
         </ul>
@@ -40,24 +40,34 @@ const renderModal = (item) => {
   const form = document.querySelector(`#form${item.idCategory}`);
   form.addEventListener('submit', (e) => {
     e.preventDefault();
+    const commnetLength = document.querySelectorAll(
+      `#comments-${item.idCategory} li`,
+    ).length;
     const commentList = document.getElementById(`comments-${item.idCategory}`);
 
-    if (
-      document.querySelectorAll(`#comments-${item.idCategory} li`).length
-        === 1
-      && document
-        .querySelectorAll(`#comments-${item.idCategory} li`)[0]
-        .classList.contains('special')
-    ) {
-      commentList.innerHTML = `<li><small>${newDate()}</small> | <span>${form.elements.name.value.trim()}:</span> ${form.elements.comment.value.trim()}</li>`;
+    if (form.elements.name.value.trim() && form.elements.comment.value.trim()) {
+      document.querySelector(
+        `.counter-${item.idCategory}`,
+      ).innerHTML = `Comments ( ${commnetLength + 1} )`;
+      if (
+        commnetLength === 1
+        && document
+          .querySelectorAll(`#comments-${item.idCategory} li`)[0]
+          .classList.contains('special')
+      ) {
+        commentList.innerHTML = `<li><small>${newDate()}</small> | <span>${form.elements.name.value.trim()}:</span> ${form.elements.comment.value.trim()}</li>`;
+      } else {
+        commentList.innerHTML += `<li><small>${newDate()}</small> | <span>${form.elements.name.value.trim()}:</span> ${form.elements.comment.value.trim()}</li>`;
+      }
+      AddComment(
+        item.idCategory,
+        form.elements.name.value.trim(),
+        form.elements.comment.value.trim(),
+      );
     } else {
-      commentList.innerHTML += `<li><small>${newDate()}</small> | <span>${form.elements.name.value.trim()}:</span> ${form.elements.comment.value.trim()}</li>`;
+      alert('Please, enter your delicious data !!!');
     }
-    AddComment(
-      item.idCategory,
-      form.elements.name.value,
-      form.elements.comment.value,
-    );
+
     form.reset();
     form.focus();
   });

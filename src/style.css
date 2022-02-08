@@ -67,6 +67,11 @@ footer {
   padding: 16px;
 }
 
+.works-project div p {
+  height: 60px;
+  overflow: hidden;
+}
+
 .works-title {
   color: var(--white);
   font-size: 32px;
@@ -167,6 +172,7 @@ form input[type='text'] {
 
 .comments {
   width: 50%;
+  margin-left: 8%;
 }
 
 .blur {
@@ -188,6 +194,11 @@ textarea {
 }
 
 @media screen and (min-width: 900px) {
+  .works {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10%;
+  }
+
   .works-title {
     font-size: 40px;
   }
@@ -209,7 +220,7 @@ textarea {
 
   .works-project {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-column-gap: 30px;
   }
 
@@ -226,5 +237,6 @@ textarea {
 
   .comments {
     width: 53%;
+    margin-left: 0;
   }
 }

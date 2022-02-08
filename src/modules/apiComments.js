@@ -27,8 +27,9 @@ const commentsRender = (data, id) => {
   }
 };
 
-const counterComments = (id, length) => {
-  if (!length) {
+export const counterComments = (id, data) => {
+  let { length } = data;
+  if (!data.length) {
     length = 0;
   }
   document.querySelector(`.counter-${id}`).innerHTML = `Comments ( ${length} )`;
@@ -39,9 +40,8 @@ export const getComments = async (id) => {
     `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${InvolveApiId}/comments?item_id=${id}`,
   );
   const data = await response.json();
-  const { length } = data;
   commentsRender(data, id);
-  counterComments(id, length);
+  counterComments(id, data);
   return data;
 };
 
