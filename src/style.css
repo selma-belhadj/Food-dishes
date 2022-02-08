@@ -155,6 +155,20 @@ button:disabled {
   margin-top: -20px;
 }
 
+.form-comments {
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px;
+}
+
+form input[type='text'] {
+  margin-bottom: 10px;
+}
+
+.comments {
+  width: 50%;
+}
+
 .blur {
   filter: blur(10px);
 }
@@ -167,6 +181,10 @@ button:disabled {
 .modal-img {
   width: 80%;
   padding-left: 10%;
+}
+
+textarea {
+  display: block;
 }
 
 @media screen and (min-width: 900px) {
