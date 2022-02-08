@@ -1,4 +1,5 @@
 import renderModal from './renderModal';
+import { getComments } from './apiComments';
 
 const renderMeals = (list) => {
   const worksContainer = document.querySelector('#portfolio');
@@ -22,6 +23,7 @@ const renderMeals = (list) => {
       modalChoose.classList.add('active');
       worksContainer.classList.add('blur');
       document.body.classList.toggle('noScroll');
+      getComments(work.idCategory);
     });
   });
 };

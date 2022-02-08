@@ -120,7 +120,7 @@ button:disabled {
   width: 800px;
   max-width: 80%;
   overflow-y: scroll;
-  max-height: 95vh;
+  max-height: 90vh;
   color: var(--white);
   padding: 5% 0;
 }
@@ -211,5 +211,20 @@ textarea {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 30px;
+  }
+
+  .modal-comment-container {
+    width: 50%;
+  }
+
+  .form-comments {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 7%;
+  }
+
+  .comments {
+    width: 53%;
   }
 }
