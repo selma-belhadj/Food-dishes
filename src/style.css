@@ -7,7 +7,7 @@
 
 :root {
   --main: chocolate;
-  --white: #ffffff;
+  --white: #fff;
   --black: #000;
   --black2: rgb(41, 23, 0);
 }
@@ -21,7 +21,6 @@ body {
 
 nav {
   padding-top: 20px;
- 
 }
 
 nav ul {
