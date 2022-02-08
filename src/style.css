@@ -73,6 +73,13 @@ footer {
   margin-top: 15px;
 }
 
+.works-img {
+  width: 100%;
+  filter: grayscale(100%);
+  opacity: 1;
+  transition: filter 500ms, opacity 1s;
+}
+
 .works-img:hover {
   transform: scale(0.93);
   filter: grayscale(0%);
@@ -125,13 +132,6 @@ button:disabled {
 
 .modal.active {
   transform: translate(-50%, -50%) scale(1);
-}
-
-.works-img {
-  width: 100%;
-  filter: grayscale(100%);
-  opacity: 1;
-  transition: filter 500ms, opacity 1s;
 }
 
 .modal-header .close-button {
