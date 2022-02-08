@@ -1,5 +1,5 @@
-import { AddComment } from './apiComments';
-import { newDate } from './utils';
+import AddComment from './apiComments';
+import newDate from './utils';
 
 const renderModal = (item) => {
   // creat modal
@@ -43,24 +43,20 @@ const renderModal = (item) => {
     const commentList = document.getElementById(`comments-${item.idCategory}`);
 
     if (
-      document.querySelectorAll(`#comments-${item.idCategory} li`).length ===
-        1 &&
-      document
+      document.querySelectorAll(`#comments-${item.idCategory} li`).length
+        === 1
+      && document
         .querySelectorAll(`#comments-${item.idCategory} li`)[0]
         .classList.contains('special')
     ) {
-      commentList.innerHTML = `<li><small>${newDate()}</small> | <span>${form.elements[
-        'name'
-      ].value.trim()}:</span> ${form.elements['comment'].value.trim()}</li>`;
+      commentList.innerHTML = `<li><small>${newDate()}</small> | <span>${form.elements.name.value.trim()}:</span> ${form.elements.comment.value.trim()}</li>`;
     } else {
-      commentList.innerHTML += `<li><small>${newDate()}</small> | <span>${form.elements[
-        'name'
-      ].value.trim()}:</span> ${form.elements['comment'].value.trim()}</li>`;
+      commentList.innerHTML += `<li><small>${newDate()}</small> | <span>${form.elements.name.value.trim()}:</span> ${form.elements.comment.value.trim()}</li>`;
     }
     AddComment(
       item.idCategory,
-      form.elements['name'].value,
-      form.elements['comment'].value
+      form.elements.name.value,
+      form.elements.comment.value,
     );
     form.reset();
     form.focus();

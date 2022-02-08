@@ -1,6 +1,6 @@
 const InvolveApiId = 'C3gRBaouCzCheKjXVJzf';
 
-export const AddComment = async (id, name, comment) => {
+const AddComment = async (id, name, comment) => {
   fetch(
     `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${InvolveApiId}/comments?item_id=${id}`,
     {
@@ -11,6 +11,8 @@ export const AddComment = async (id, name, comment) => {
         username: name,
         comment,
       }),
-    }
+    },
   );
 };
+
+export default AddComment;
