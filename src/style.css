@@ -65,6 +65,12 @@ footer {
   flex-direction: column;
   background-color: var(--black2);
   padding: 16px;
+  height: fit-content;
+}
+
+.works-project div p {
+  height: 60px;
+  overflow: hidden;
 }
 
 .works-title {
@@ -155,6 +161,10 @@ button:disabled {
   margin-top: -20px;
 }
 
+.comments {
+  margin-left: 8%;
+}
+
 .form-comments {
   display: flex;
   flex-direction: column;
@@ -188,6 +198,10 @@ textarea {
 }
 
 @media screen and (min-width: 900px) {
+  .works {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10%;
+  }
   .works-title {
     font-size: 40px;
   }
@@ -209,7 +223,7 @@ textarea {
 
   .works-project {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-column-gap: 30px;
   }
 
@@ -226,5 +240,6 @@ textarea {
 
   .comments {
     width: 53%;
+    margin-left: 0;
   }
 }
