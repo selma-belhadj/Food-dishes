@@ -65,7 +65,6 @@ footer {
   flex-direction: column;
   background-color: var(--black2);
   padding: 16px;
-  height: fit-content;
 }
 
 .works-project div p {
@@ -161,10 +160,6 @@ button:disabled {
   margin-top: -20px;
 }
 
-.comments {
-  margin-left: 8%;
-}
-
 .form-comments {
   display: flex;
   flex-direction: column;
@@ -177,6 +172,7 @@ form input[type='text'] {
 
 .comments {
   width: 50%;
+  margin-left: 8%;
 }
 
 .blur {
@@ -202,6 +198,7 @@ textarea {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 10%;
   }
+  
   .works-title {
     font-size: 40px;
   }
