@@ -35,6 +35,12 @@ nav ul li {
   font-size: 1.2rem;
 }
 
+nav li i {
+  margin-top: -8px;
+  font-size: 40px;
+  color: var(--main);
+}
+
 footer {
   border: 1px #fff solid;
   padding: 20px;
