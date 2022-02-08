@@ -1,4 +1,3 @@
-
 const renderModal = (item) => {
   // creat modal
   const modalContainer = document.createElement('div');

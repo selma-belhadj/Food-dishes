@@ -11,7 +11,7 @@
 
 :root {
   --main: chocolate;
-  --white: #ffffff;
+  --white: #fff;
   --black: #000;
   --black2: rgb(41, 23, 0);
 }
@@ -44,6 +44,7 @@ nav li i {
   font-size: 40px;
   color: var(--main);
 }
+
 footer {
   border: 1px #fff solid;
   padding: 20px;

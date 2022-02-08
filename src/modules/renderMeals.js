@@ -1,10 +1,10 @@
 import renderModal from './renderModal';
+
 const renderMeals = (list) => {
   const worksContainer = document.querySelector('#portfolio');
   list.forEach((work) => {
     const workProject = document.createElement('div');
-    let workContent;
-    workContent = ` <div class="works-project">
+    const workContent = ` <div class="works-project">
           <img class="works-img" src=${work.strCategoryThumb} alt="test1"  draggable="false"/>
           <div>
               <h2 class="works-title">${work.strCategory}</h2>
@@ -16,7 +16,7 @@ const renderMeals = (list) => {
     worksContainer.appendChild(workProject);
 
     const modalOpenButton = document.getElementById(work.idCategory);
-    modalOpenButton.addEventListener('click', (e) => {
+    modalOpenButton.addEventListener('click', () => {
       renderModal(work);
       const modalChoose = document.querySelector(`#modal${work.idCategory}`);
       modalChoose.classList.add('active');
@@ -24,7 +24,6 @@ const renderMeals = (list) => {
       document.body.classList.toggle('noScroll');
     });
   });
-  return;
 };
 
 export default renderMeals;
