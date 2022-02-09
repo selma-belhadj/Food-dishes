@@ -351,7 +351,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Quintessential&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n}\n\n.noScroll {\n  overflow: hidden;\n}\n\n:root {\n  --main: chocolate;\n  --white: #fff;\n  --black: #000;\n  --black2: rgb(41, 23, 0);\n}\n\nbody {\n  background-color: var(--black2);\n  color: var(--white);\n  font-family: 'Quintessential', cursive;\n  font-size: 10px;\n}\n\nnav {\n  padding-top: 20px;\n}\n\nnav ul {\n  list-style: none;\n  display: flex;\n  justify-content: space-around;\n  color: var(--main);\n}\n\nnav ul li {\n  font-weight: bold;\n  font-size: 1.2rem;\n}\n\nnav li i {\n  margin-top: -8px;\n  font-size: 40px;\n  color: var(--main);\n}\n\nfooter {\n  border: 1px #fff solid;\n  padding: 20px;\n  text-align: center;\n}\n\n.works {\n  display: grid;\n  row-gap: 80px;\n  padding: 128px 6.5%;\n  width: auto;\n}\n\n.works-project {\n  border: 1px rgb(209, 188, 144) solid;\n  border-radius: 8px;\n  display: flex;\n  flex-direction: column;\n  background-color: var(--black2);\n  padding: 16px;\n}\n\n.works-project div p {\n  height: 60px;\n  overflow: hidden;\n}\n\n.works-title {\n  color: var(--white);\n  font-size: 32px;\n  margin-top: 15px;\n}\n\n.works-img {\n  width: 100%;\n  filter: grayscale(100%);\n  opacity: 1;\n  transition: filter 500ms, opacity 1s;\n}\n\n.works-img:hover {\n  transform: scale(0.93);\n  filter: grayscale(0%);\n}\n\nbutton {\n  color: var(--white);\n  border: 1.5px solid var(--main);\n  border-radius: 10px;\n  font-size: 20px;\n  font-weight: 500;\n  line-height: 24px;\n  padding: 10px;\n  background-color: transparent;\n  margin: 20px 0;\n  transition: background-color 500ms;\n}\n\nbutton:hover {\n  background-color: var(--main);\n  color: #fff;\n}\n\nbutton:disabled {\n  color: #5e6c84;\n  border-color: #c1c7d0;\n}\n\n.modal {\n  font-size: 12px;\n  position: fixed;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%) scale(0);\n  border-radius: 10px;\n  z-index: 10;\n  background-color: var(--black2);\n  width: 800px;\n  max-width: 80%;\n  overflow-y: scroll;\n  max-height: 80vh;\n  color: var(--white);\n  padding: 5% 0;\n}\n\n.modal-content {\n  display: flex;\n  flex-direction: column;\n}\n\n.modal.active {\n  transform: translate(-50%, -50%) scale(1);\n}\n\n.modal-header .close-button {\n  cursor: pointer;\n  border: none;\n  outline: none;\n  background: none;\n  font-size: 30px;\n  color: gray;\n  position: absolute;\n  top: -20px;\n  right: 5px;\n}\n\n.modal-body {\n  padding: 20px 40px;\n}\n\n.modal-list {\n  padding-left: 20px;\n  margin-top: -20px;\n}\n\n.form-comments {\n  display: flex;\n  flex-direction: column;\n  padding: 0 40px;\n}\n\nform input[type='text'] {\n  margin-bottom: 10px;\n}\n\n.comments {\n  width: 50%;\n  margin-left: 8%;\n}\n\n.blur {\n  filter: blur(10px);\n}\n\n.btn-img {\n  margin-left: 8px;\n  margin-bottom: -3px;\n}\n\n.modal-img {\n  width: 80%;\n  padding-left: 10%;\n}\n\ntextarea {\n  display: block;\n}\n\n.heart {\n  font-size: 25px;\n}\n\n.heart:hover {\n  color: var(--main);\n}\n\n.likes {\n  display: flex;\n  justify-content: space-between;\n}\n\n.likes-content {\n  margin-top: 30px;\n  user-select: none;\n}\n\n@media screen and (min-width: 900px) {\n  .works {\n    grid-template-columns: 1fr 1fr;\n    grid-column-gap: 10%;\n  }\n\n  .works-title {\n    font-size: 40px;\n  }\n\n  .modal {\n    font-size: 15px;\n    overflow-y: scroll;\n  }\n\n  .modal-img {\n    width: 40%;\n    padding-left: 2.5%;\n  }\n\n  .modal-content {\n    display: flex;\n    flex-direction: row;\n  }\n\n  .works-project {\n    display: grid;\n    grid-template-columns: 1fr;\n    grid-column-gap: 30px;\n  }\n\n  .modal-comment-container {\n    width: 50%;\n  }\n\n  .form-comments {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    padding: 0 7%;\n  }\n\n  .comments {\n    width: 53%;\n    margin-left: 0;\n  }\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n}\n\n.noScroll {\n  overflow: hidden;\n}\n\n:root {\n  --main: chocolate;\n  --white: #fff;\n  --black: #000;\n  --black2: rgb(41, 23, 0);\n}\n\nbody {\n  background-color: var(--black2);\n  color: var(--white);\n  font-family: 'Quintessential', cursive;\n  font-size: 10px;\n}\n\nnav {\n  padding-top: 20px;\n}\n\nnav ul {\n  list-style: none;\n  display: flex;\n  justify-content: space-around;\n  color: var(--main);\n}\n\nnav ul li {\n  font-weight: bold;\n  font-size: 1.2rem;\n}\n\nnav li i {\n  margin-top: -8px;\n  font-size: 40px;\n  color: var(--main);\n}\n\nfooter {\n  border: 1px #fff solid;\n  padding: 20px;\n  text-align: center;\n}\n\n.works {\n  display: grid;\n  row-gap: 80px;\n  padding: 128px 6.5%;\n  width: auto;\n}\n\n.works-project {\n  border: 1px rgb(209, 188, 144) solid;\n  border-radius: 8px;\n  display: flex;\n  flex-direction: column;\n  background-color: var(--black2);\n  padding: 16px;\n}\n\n.works-project div p {\n  height: 60px;\n  overflow: hidden;\n}\n\n.works-title {\n  color: var(--white);\n  font-size: 32px;\n  margin-top: 15px;\n}\n\n.works-img {\n  width: 100%;\n  filter: grayscale(100%);\n  opacity: 1;\n  transition: filter 500ms, opacity 1s;\n}\n\n.works-img:hover {\n  transform: scale(0.93);\n  filter: grayscale(0%);\n}\n\nbutton {\n  color: var(--white);\n  border: 1.5px solid var(--main);\n  border-radius: 10px;\n  font-size: 20px;\n  font-weight: 500;\n  line-height: 24px;\n  padding: 10px;\n  background-color: transparent;\n  margin: 20px 0;\n  transition: background-color 500ms;\n}\n\nbutton:hover {\n  background-color: var(--main);\n  color: #fff;\n}\n\nbutton:disabled {\n  color: #5e6c84;\n  border-color: #c1c7d0;\n}\n\n.modal {\n  font-size: 12px;\n  position: fixed;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%) scale(0);\n  border-radius: 10px;\n  z-index: 10;\n  background-color: var(--black2);\n  width: 800px;\n  max-width: 80%;\n  overflow-y: scroll;\n  max-height: 80vh;\n  color: var(--white);\n  padding: 5% 0;\n}\n\n.modal-content {\n  display: flex;\n  flex-direction: column;\n}\n\n.modal.active {\n  transform: translate(-50%, -50%) scale(1);\n}\n\n.modal-header .close-button {\n  cursor: pointer;\n  border: none;\n  outline: none;\n  background: none;\n  font-size: 30px;\n  color: gray;\n  position: absolute;\n  top: -20px;\n  right: 5px;\n}\n\n.modal-body {\n  padding: 20px 40px;\n}\n\n.modal-list {\n  padding-left: 20px;\n  margin-top: -20px;\n}\n\n.form-comments {\n  display: flex;\n  flex-direction: column;\n  padding: 0 40px;\n}\n\nform input[type='text'] {\n  margin-bottom: 10px;\n}\n\n.comments {\n  width: 50%;\n  margin-left: 8%;\n}\n\n.blur {\n  filter: blur(10px);\n}\n\n.btn-img {\n  margin-left: 8px;\n  margin-bottom: -3px;\n}\n\n.modal-img {\n  width: 80%;\n  padding-left: 10%;\n}\n\ntextarea {\n  display: block;\n}\n\n.heart {\n  font-size: 25px;\n}\n\n.heart:hover {\n  color: var(--main);\n}\n\n.likes {\n  display: flex;\n  justify-content: space-between;\n}\n\n.likes-content {\n  margin-top: 30px;\n  user-select: none;\n}\n\n@media screen and (min-width: 900px) {\n  .works {\n    grid-template-columns: 1fr 1fr;\n    grid-column-gap: 10%;\n  }\n\n  .works-title {\n    font-size: 40px;\n  }\n\n  .modal {\n    font-size: 15px;\n    overflow-y: scroll;\n  }\n\n  .modal-img {\n    width: 40%;\n    padding-left: 2.5%;\n  }\n\n  .modal-content {\n    display: flex;\n    flex-direction: row;\n  }\n\n  .works-project {\n    display: grid;\n    grid-template-columns: 1fr;\n    grid-column-gap: 30px;\n  }\n\n  .modal-comment-container {\n    width: 50%;\n  }\n\n  .form-comments {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    padding: 0 7%;\n  }\n\n  .comments {\n    width: 53%;\n    margin-left: 0;\n  }\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -484,13 +484,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _renderModal_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(12);
 /* harmony import */ var _apiComments_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(13);
 /* harmony import */ var _likes_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(15);
+/* harmony import */ var _countItems__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(16);
+
 
 
 
 
 const renderMeals = (list, likeList) => {
   const worksContainer = document.querySelector('#portfolio');
-  list.forEach((work, index) => {
+  (0,_countItems__WEBPACK_IMPORTED_MODULE_3__["default"])(list);
+  list.forEach((work) => {
     const workProject = document.createElement('div');
     const workContent = ` <div class="works-project">
           <img class="works-img" src=${work.strCategoryThumb} alt="test1"  draggable="false"/>
@@ -512,13 +515,12 @@ const renderMeals = (list, likeList) => {
     const heartLikesBtn = document.getElementById(`heart-${work.idCategory}`);
     heartLikesBtn.addEventListener('click', () => {
       const lastValue = Number(
-        document.querySelector(`.likesCounter-${work.idCategory}`).textContent
+        document.querySelector(`.likesCounter-${work.idCategory}`).textContent,
       );
       document.querySelector(`.likesCounter-${work.idCategory}`).innerHTML = `${
         lastValue + 1
       }`;
-      //add like to api
-      console.log('likes Id: ', work.idCategory);
+      // add like to api
       (0,_likes_js__WEBPACK_IMPORTED_MODULE_2__.addLike)(work.idCategory);
     });
 
@@ -535,13 +537,12 @@ const renderMeals = (list, likeList) => {
 
   likeList = likeList.filter((item) => item.item_id !== '1234');
   likeList.forEach((item) => {
-    console.log('he', 'id:', item.item_id, 'likes:', item.likes);
-    document.querySelector(`.likesCounter-${item.item_id}`).innerHTML =
-      item.likes;
+    document.querySelector(`.likesCounter-${item.item_id}`).innerHTML = item.likes;
   });
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (renderMeals);
+
 
 /***/ }),
 /* 12 */
@@ -730,8 +731,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "addLike": () => (/* binding */ addLike),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-const url =
-  'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/F3s8vkUg6h9SLp2FMoph/likes';
+const url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/F3s8vkUg6h9SLp2FMoph/likes';
 const getLikes = async () => {
   const response = await fetch(url);
   const data = await response.json();
@@ -751,6 +751,21 @@ const addLike = async (id) => {
 
 /***/ }),
 /* 16 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+const countItems = (listMeals) => {
+  const len = listMeals.length;
+  document.querySelector('.item-number').innerHTML = `Meals (${len})`;
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (countItems);
+
+/***/ }),
+/* 17 */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -841,13 +856,15 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var _modules_renderMeals__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
-/* harmony import */ var _modules_apiMeals__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(16);
+/* harmony import */ var _modules_apiMeals__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(17);
+/* harmony import */ var _modules_likes__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(15);
+
 
 
 
 
 window.onload = async () => {
-  (0,_modules_renderMeals__WEBPACK_IMPORTED_MODULE_1__["default"])(await (0,_modules_apiMeals__WEBPACK_IMPORTED_MODULE_2__["default"])());
+  (0,_modules_renderMeals__WEBPACK_IMPORTED_MODULE_1__["default"])(await (0,_modules_apiMeals__WEBPACK_IMPORTED_MODULE_2__["default"])(), await (0,_modules_likes__WEBPACK_IMPORTED_MODULE_3__["default"])());
 };
 })();
 

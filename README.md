@@ -4,7 +4,7 @@
 
 > This Webapp  displays a list of food dishes. The user is able to like any of the dishes, and also read more information about each recepie once he clicks on the "comments" button. Also, the user is able to leave a comment about any of the food.
 
-![screenshot]()
+![screenshot](./src/images/Screenshot.png)
 ## Built With
 
 - HTML
@@ -14,7 +14,7 @@
 
 ## Live Demo 
 
-[Live Demo Link]()
+[Live Demo Link](https://foodzz.netlify.app/)
 
 ## Video Demo
 [Video Demo Link](https://www.loom.com/)
