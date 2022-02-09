@@ -193,14 +193,23 @@ textarea {
   display: block;
 }
 
-
-#heart{
+.heart {
   font-size: 25px;
 }
-#heart:hover{
+
+.heart:hover {
   color: var(--main);
 }
 
+.likes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.likes-content {
+  margin-top: 30px;
+  user-select: none;
+}
 
 @media screen and (min-width: 900px) {
   .works {
