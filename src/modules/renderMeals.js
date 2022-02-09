@@ -1,9 +1,11 @@
 import renderModal from './renderModal.js';
 import { getComments } from './apiComments.js';
 import { addLike } from './likes.js';
+import countItems from './countItems';
 
 const renderMeals = (list, likeList) => {
   const worksContainer = document.querySelector('#portfolio');
+  countItems(list);
   list.forEach((work) => {
     const workProject = document.createElement('div');
     const workContent = ` <div class="works-project">
@@ -26,7 +28,7 @@ const renderMeals = (list, likeList) => {
     const heartLikesBtn = document.getElementById(`heart-${work.idCategory}`);
     heartLikesBtn.addEventListener('click', () => {
       const lastValue = Number(
-        document.querySelector(`.likesCounter-${work.idCategory}`).textContent
+        document.querySelector(`.likesCounter-${work.idCategory}`).textContent,
       );
       document.querySelector(`.likesCounter-${work.idCategory}`).innerHTML = `${
         lastValue + 1
@@ -48,8 +50,7 @@ const renderMeals = (list, likeList) => {
 
   likeList = likeList.filter((item) => item.item_id !== '1234');
   likeList.forEach((item) => {
-    document.querySelector(`.likesCounter-${item.item_id}`).innerHTML =
-      item.likes;
+    document.querySelector(`.likesCounter-${item.item_id}`).innerHTML = item.likes;
   });
 };
 
