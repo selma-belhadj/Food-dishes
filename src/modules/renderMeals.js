@@ -26,13 +26,12 @@ const renderMeals = (list, likeList) => {
     const heartLikesBtn = document.getElementById(`heart-${work.idCategory}`);
     heartLikesBtn.addEventListener('click', () => {
       const lastValue = Number(
-        document.querySelector(`.likesCounter-${work.idCategory}`).textContent,
+        document.querySelector(`.likesCounter-${work.idCategory}`).textContent
       );
       document.querySelector(`.likesCounter-${work.idCategory}`).innerHTML = `${
         lastValue + 1
       }`;
       // add like to api
-      console.log('likes Id: ', work.idCategory);
       addLike(work.idCategory);
     });
 
@@ -49,8 +48,8 @@ const renderMeals = (list, likeList) => {
 
   likeList = likeList.filter((item) => item.item_id !== '1234');
   likeList.forEach((item) => {
-    console.log('he', 'id:', item.item_id, 'likes:', item.likes);
-    document.querySelector(`.likesCounter-${item.item_id}`).innerHTML = item.likes;
+    document.querySelector(`.likesCounter-${item.item_id}`).innerHTML =
+      item.likes;
   });
 };
 
