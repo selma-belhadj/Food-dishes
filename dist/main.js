@@ -351,7 +351,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Quintessential&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n}\n\n:root {\n  --main: chocolate;\n  --white: #fff;\n  --black: #000;\n  --black2: rgb(41, 23, 0);\n}\n\nbody {\n  background-color: var(--black2);\n  color: var(--white);\n  font-family: 'Quintessential', cursive;\n  font-size: 10px;\n}\n\nnav {\n  padding-top: 20px;\n}\n\nnav ul {\n  list-style: none;\n  display: flex;\n  justify-content: space-around;\n  color: var(--main);\n}\n\nnav ul li {\n  font-weight: bold;\n  font-size: 1.2rem;\n}\n\nnav li i {\n  margin-top: -8px;\n  font-size: 40px;\n  color: var(--main);\n}\n\nfooter {\n  border: 1px #fff solid;\n  padding: 20px;\n  text-align: center;\n}\n\n.works {\n  display: grid;\n  row-gap: 80px;\n  padding: 128px 6.5%;\n  width: auto;\n}\n\n.works-project {\n  border: 1px rgb(209, 188, 144) solid;\n  border-radius: 8px;\n  display: flex;\n  flex-direction: column;\n  background-color: var(--black2);\n  padding: 16px;\n}\n\n.works-title {\n  color: var(--white);\n  font-size: 32px;\n  margin-top: 15px;\n}\n\n.works-img:hover {\n  transform: scale(0.93);\n  filter: grayscale(0%);\n}\n\nbutton {\n  color: var(--white);\n  border: 1.5px solid var(--main);\n  border-radius: 10px;\n  font-size: 20px;\n  font-weight: 500;\n  line-height: 24px;\n  padding: 10px;\n  background-color: transparent;\n  margin: 20px 0;\n  transition: background-color 500ms;\n}\n\nbutton:hover {\n  background-color: var(--main);\n  color: #fff;\n}\n\nbutton:disabled {\n  color: #5e6c84;\n  border-color: #c1c7d0;\n}\n\n.works {\n  display: grid;\n  row-gap: 80px;\n  padding: 128px 6.5%;\n  width: auto;\n}\n\n.works-project {\n  border: 1px rgb(209, 188, 144) solid;\n  border-radius: 8px;\n  display: flex;\n  flex-direction: column;\n  background-color: var(--black2);\n  padding: 16px;\n}\n\n.works-title {\n  color: var(--white);\n  font-size: 32px;\n  margin-top: 15px;\n}\n\n.works-img:hover {\n  transform: scale(0.93);\n  filter: grayscale(0%);\n}\n\nbutton {\n  color: var(--white);\n  border: 1.5px solid var(--main);\n  border-radius: 10px;\n  font-size: 20px;\n  font-weight: 500;\n  line-height: 24px;\n  padding: 10px;\n  background-color: transparent;\n  margin: 20px 0;\n  transition: background-color 500ms;\n}\n\nbutton:hover {\n  background-color: var(--main);\n  color: #fff;\n}\n\nbutton:disabled {\n  color: #5e6c84;\n  border-color: #c1c7d0;\n}\n\n@media screen and (min-width: 900px) {\n  .works-title {\n    font-size: 40px;\n  }\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n}\n\n.noScroll {\n  overflow: hidden;\n}\n\n:root {\n  --main: chocolate;\n  --white: #fff;\n  --black: #000;\n  --black2: rgb(41, 23, 0);\n}\n\nbody {\n  background-color: var(--black2);\n  color: var(--white);\n  font-family: 'Quintessential', cursive;\n  font-size: 10px;\n}\n\nnav {\n  padding-top: 20px;\n}\n\nnav ul {\n  list-style: none;\n  display: flex;\n  justify-content: space-around;\n  color: var(--main);\n}\n\nnav ul li {\n  font-weight: bold;\n  font-size: 1.2rem;\n}\n\nnav li i {\n  margin-top: -8px;\n  font-size: 40px;\n  color: var(--main);\n}\n\nfooter {\n  border: 1px #fff solid;\n  padding: 20px;\n  text-align: center;\n}\n\n.works {\n  display: grid;\n  row-gap: 80px;\n  padding: 128px 6.5%;\n  width: auto;\n}\n\n.works-project {\n  border: 1px rgb(209, 188, 144) solid;\n  border-radius: 8px;\n  display: flex;\n  flex-direction: column;\n  background-color: var(--black2);\n  padding: 16px;\n}\n\n.works-project div p {\n  height: 60px;\n  overflow: hidden;\n}\n\n.works-title {\n  color: var(--white);\n  font-size: 32px;\n  margin-top: 15px;\n}\n\n.works-img {\n  width: 100%;\n  filter: grayscale(100%);\n  opacity: 1;\n  transition: filter 500ms, opacity 1s;\n}\n\n.works-img:hover {\n  transform: scale(0.93);\n  filter: grayscale(0%);\n}\n\nbutton {\n  color: var(--white);\n  border: 1.5px solid var(--main);\n  border-radius: 10px;\n  font-size: 20px;\n  font-weight: 500;\n  line-height: 24px;\n  padding: 10px;\n  background-color: transparent;\n  margin: 20px 0;\n  transition: background-color 500ms;\n}\n\nbutton:hover {\n  background-color: var(--main);\n  color: #fff;\n}\n\nbutton:disabled {\n  color: #5e6c84;\n  border-color: #c1c7d0;\n}\n\n.modal {\n  font-size: 12px;\n  position: fixed;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%) scale(0);\n  border-radius: 10px;\n  z-index: 10;\n  background-color: var(--black2);\n  width: 800px;\n  max-width: 80%;\n  overflow-y: scroll;\n  max-height: 80vh;\n  color: var(--white);\n  padding: 5% 0;\n}\n\n.modal-content {\n  display: flex;\n  flex-direction: column;\n}\n\n.modal.active {\n  transform: translate(-50%, -50%) scale(1);\n}\n\n.modal-header .close-button {\n  cursor: pointer;\n  border: none;\n  outline: none;\n  background: none;\n  font-size: 30px;\n  color: gray;\n  position: absolute;\n  top: -20px;\n  right: 5px;\n}\n\n.modal-body {\n  padding: 20px 40px;\n}\n\n.modal-list {\n  padding-left: 20px;\n  margin-top: -20px;\n}\n\n.form-comments {\n  display: flex;\n  flex-direction: column;\n  padding: 0 40px;\n}\n\nform input[type='text'] {\n  margin-bottom: 10px;\n}\n\n.comments {\n  width: 50%;\n  margin-left: 8%;\n}\n\n.blur {\n  filter: blur(10px);\n}\n\n.btn-img {\n  margin-left: 8px;\n  margin-bottom: -3px;\n}\n\n.modal-img {\n  width: 80%;\n  padding-left: 10%;\n}\n\ntextarea {\n  display: block;\n}\n\n.heart {\n  font-size: 25px;\n}\n\n.heart:hover {\n  color: var(--main);\n}\n\n.likes {\n  display: flex;\n  justify-content: space-between;\n}\n\n.likes-content {\n  margin-top: 30px;\n  user-select: none;\n}\n\n@media screen and (min-width: 900px) {\n  .works {\n    grid-template-columns: 1fr 1fr;\n    grid-column-gap: 10%;\n  }\n\n  .works-title {\n    font-size: 40px;\n  }\n\n  .modal {\n    font-size: 15px;\n    overflow-y: scroll;\n  }\n\n  .modal-img {\n    width: 40%;\n    padding-left: 2.5%;\n  }\n\n  .modal-content {\n    display: flex;\n    flex-direction: row;\n  }\n\n  .works-project {\n    display: grid;\n    grid-template-columns: 1fr;\n    grid-column-gap: 30px;\n  }\n\n  .modal-comment-container {\n    width: 50%;\n  }\n\n  .form-comments {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    padding: 0 7%;\n  }\n\n  .comments {\n    width: 53%;\n    margin-left: 0;\n  }\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -481,31 +481,276 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-const renderMeals = (list) => {
+/* harmony import */ var _renderModal_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(12);
+/* harmony import */ var _apiComments_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(13);
+/* harmony import */ var _likes_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(15);
+
+
+
+
+const renderMeals = (list, likeList) => {
   const worksContainer = document.querySelector('#portfolio');
-  list.forEach((work) => {
+  list.forEach((work, index) => {
     const workProject = document.createElement('div');
-    let workContent;
-    workContent = ` <div class="works-project">
+    const workContent = ` <div class="works-project">
           <img class="works-img" src=${work.strCategoryThumb} alt="test1"  draggable="false"/>
           <div>
               <h2 class="works-title">${work.strCategory}</h2>
-              <p>${work.strCategoryDescription}</p>   
-              <button data-modal-target="#modal${work.idCategory}" id=${work.idCategory} type="button">Comment</button>
+              <p>${work.strCategoryDescription}</p>
+              <div class="likes">
+                    <div class="likes-content" draggable="false"> <i id="heart-${work.idCategory}" class="heart far fa-heart"></i>
+                      <span class="counter"><span class="likesCounter-${work.idCategory}">0</span> Likes</span>
+                    </div>
+                    <button data-modal-target="#modal${work.idCategory}" id=${work.idCategory} type="button">Comment</button>
+              </div>   
           </div>
         </div>`;
+
     workProject.innerHTML = workContent;
     worksContainer.appendChild(workProject);
 
-   
+    const heartLikesBtn = document.getElementById(`heart-${work.idCategory}`);
+    heartLikesBtn.addEventListener('click', () => {
+      const lastValue = Number(
+        document.querySelector(`.likesCounter-${work.idCategory}`).textContent
+      );
+      document.querySelector(`.likesCounter-${work.idCategory}`).innerHTML = `${
+        lastValue + 1
+      }`;
+      //add like to api
+      console.log('likes Id: ', work.idCategory);
+      (0,_likes_js__WEBPACK_IMPORTED_MODULE_2__.addLike)(work.idCategory);
+    });
+
+    const modalOpenButton = document.getElementById(work.idCategory);
+    modalOpenButton.addEventListener('click', () => {
+      (0,_renderModal_js__WEBPACK_IMPORTED_MODULE_0__["default"])(work);
+      const modalChoose = document.querySelector(`#modal${work.idCategory}`);
+      modalChoose.classList.add('active');
+      worksContainer.classList.add('blur');
+      document.body.classList.toggle('noScroll');
+      (0,_apiComments_js__WEBPACK_IMPORTED_MODULE_1__.getComments)(work.idCategory);
+    });
   });
-  return;
+
+  likeList = likeList.filter((item) => item.item_id !== '1234');
+  likeList.forEach((item) => {
+    console.log('he', 'id:', item.item_id, 'likes:', item.likes);
+    document.querySelector(`.likesCounter-${item.item_id}`).innerHTML =
+      item.likes;
+  });
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (renderMeals);
 
 /***/ }),
 /* 12 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _apiComments__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(13);
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(14);
+
+
+
+const renderModal = (item) => {
+  // creat modal
+  const modalContainer = document.createElement('div');
+  modalContainer.id = `modal${item.idCategory}`;
+  modalContainer.classList.add('modal');
+  const modalContent = `
+    <div class="modal-header">
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+    <div class="modal-content">
+        <img class="modal-img" src=${item.strCategoryThumb} alt="sdadsa" draggable="false" />
+        <div class="modal-body">
+          <h2>${item.strCategory}</h2>
+          <div class="modal-detail">
+            ${item.strCategoryDescription}
+          </div>
+        </div>
+    </div>
+    <div class="form-comments" >
+      <form id=form${item.idCategory}>
+        <h3>Add Comment</h3>
+        <input name="name" type="text" placeholder="Name" />
+        <textarea name="comment" type="message" rows="5" cols="25" placeholder="Your delicious Comment" ></textarea>
+        <button name='button' type="submit" id=${item.idCategory} class="comment-btn">Comment</button>
+      </form>
+      <div class="modal-comment-container">
+        <h3 class="counter-${item.idCategory}">Comments</h3>
+        <ul class="comments" id=comments-${item.idCategory}>
+        
+        </ul>
+      </div>
+    </div>
+    `;
+  modalContainer.innerHTML = modalContent;
+  document.body.appendChild(modalContainer);
+
+  const form = document.querySelector(`#form${item.idCategory}`);
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const commnetLength = document.querySelectorAll(
+      `#comments-${item.idCategory} li`,
+    ).length;
+    const commentList = document.getElementById(`comments-${item.idCategory}`);
+
+    if (form.elements.name.value.trim() && form.elements.comment.value.trim()) {
+      document.querySelector(
+        `.counter-${item.idCategory}`,
+      ).innerHTML = `Comments ( ${commnetLength + 1} )`;
+      if (
+        commnetLength === 1
+        && document
+          .querySelectorAll(`#comments-${item.idCategory} li`)[0]
+          .classList.contains('special')
+      ) {
+        commentList.innerHTML = `<li><small>${(0,_utils__WEBPACK_IMPORTED_MODULE_1__["default"])()}</small> | <span>${form.elements.name.value.trim()}:</span> ${form.elements.comment.value.trim()}</li>`;
+      } else {
+        commentList.innerHTML += `<li><small>${(0,_utils__WEBPACK_IMPORTED_MODULE_1__["default"])()}</small> | <span>${form.elements.name.value.trim()}:</span> ${form.elements.comment.value.trim()}</li>`;
+      }
+      (0,_apiComments__WEBPACK_IMPORTED_MODULE_0__["default"])(
+        item.idCategory,
+        form.elements.name.value.trim(),
+        form.elements.comment.value.trim(),
+      );
+    } else {
+      alert('Please, enter your delicious data !!!');
+    }
+
+    form.reset();
+    form.focus();
+  });
+
+  const worksContainer = document.querySelector('#portfolio');
+  const modalCloseButtons = document.querySelectorAll('[data-close-button]');
+  function modalClose(modal) {
+    if (modal == null) return;
+    modal.classList.remove('active');
+    worksContainer.classList.remove('blur');
+  }
+  modalCloseButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const modalChoose = button.closest('.modal');
+      document.body.classList.toggle('noScroll');
+      modalClose(modalChoose);
+    });
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (renderModal);
+
+
+/***/ }),
+/* 13 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "counterComments": () => (/* binding */ counterComments),
+/* harmony export */   "getComments": () => (/* binding */ getComments),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+const InvolveApiId = 'C3gRBaouCzCheKjXVJzf';
+
+const AddComment = async (id, name, comment) => {
+  fetch(
+    `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${InvolveApiId}/comments?item_id=${id}`,
+    {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        item_id: id,
+        username: name,
+        comment,
+      }),
+    },
+  );
+};
+
+const commentsRender = (data, id) => {
+  const list = document.getElementById(`comments-${id}`);
+  list.innerHTML = '';
+  if (data.length) {
+    data.forEach((comment) => {
+      list.innerHTML += `<li><small>${comment.creation_date}</small> | <span>${comment.username}:</span> ${comment.comment}</li>`;
+    });
+  } else {
+    list.innerHTML = '<li class="special">No comments </li>';
+  }
+};
+
+const counterComments = (id, data) => {
+  let { length } = data;
+  if (!data.length) {
+    length = 0;
+  }
+  document.querySelector(`.counter-${id}`).innerHTML = `Comments ( ${length} )`;
+};
+
+const getComments = async (id) => {
+  const response = await fetch(
+    `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${InvolveApiId}/comments?item_id=${id}`,
+  );
+  const data = await response.json();
+  commentsRender(data, id);
+  counterComments(id, data);
+  return data;
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (AddComment);
+
+
+/***/ }),
+/* 14 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+const newDate = () => {
+  const date = new Date();
+  return date.toISOString().split('T')[0];
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (newDate);
+
+
+/***/ }),
+/* 15 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "addLike": () => (/* binding */ addLike),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+const url =
+  'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/F3s8vkUg6h9SLp2FMoph/likes';
+const getLikes = async () => {
+  const response = await fetch(url);
+  const data = await response.json();
+  return data;
+};
+
+const addLike = async (id) => {
+  fetch(url, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      item_id: id,
+    }),
+  });
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (getLikes);
+
+/***/ }),
+/* 16 */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -519,6 +764,7 @@ const getMeals = async () => {
   return data.categories;
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (getMeals);
+
 
 /***/ })
 /******/ 	]);
@@ -594,14 +840,14 @@ var __webpack_exports__ = {};
 (() => {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-/* harmony import */ var _modules_mealsRender__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
-/* harmony import */ var _modules_apiMeals__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(12);
+/* harmony import */ var _modules_renderMeals__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
+/* harmony import */ var _modules_apiMeals__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(16);
 
 
 
 
 window.onload = async () => {
-   (0,_modules_mealsRender__WEBPACK_IMPORTED_MODULE_1__["default"])(await (0,_modules_apiMeals__WEBPACK_IMPORTED_MODULE_2__["default"])());
+  (0,_modules_renderMeals__WEBPACK_IMPORTED_MODULE_1__["default"])(await (0,_modules_apiMeals__WEBPACK_IMPORTED_MODULE_2__["default"])());
 };
 })();
 

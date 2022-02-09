@@ -193,6 +193,24 @@ textarea {
   display: block;
 }
 
+.heart {
+  font-size: 25px;
+}
+
+.heart:hover {
+  color: var(--main);
+}
+
+.likes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.likes-content {
+  margin-top: 30px;
+  user-select: none;
+}
+
 @media screen and (min-width: 900px) {
   .works {
     grid-template-columns: 1fr 1fr;
