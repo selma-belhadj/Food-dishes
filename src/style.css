@@ -193,6 +193,15 @@ textarea {
   display: block;
 }
 
+
+#heart{
+  font-size: 25px;
+}
+#heart:hover{
+  color: var(--main);
+}
+
+
 @media screen and (min-width: 900px) {
   .works {
     grid-template-columns: 1fr 1fr;
