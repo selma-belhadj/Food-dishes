@@ -16,9 +16,6 @@
 
 [Live Demo Link](https://foodzz.netlify.app/)
 
-## Video Demo
-[Video Demo Link](https://drive.google.com/file/d/10qujYBtnvg8TrbZGNyQeQfmVIIHOylPK/view?usp=sharing)
-
 
 ## Getting Started
 
