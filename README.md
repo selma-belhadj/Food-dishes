@@ -1,5 +1,5 @@
 
-# The Capstone Project JS 
+# The Capstone Project JS (Food Dish) 
 
 
 > This Webapp displays a list of food dishes. The user is able to like any of the meals, and also read more information about each meal once he clicks on the **Comment** button. Also, the user is able to leave a comment about any meal.
